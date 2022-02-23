@@ -1,0 +1,21 @@
+@import "variables";
+
+footer {
+    div {
+        div {
+            display: flex;
+            justify-content: center;
+
+            div {
+                background-color: $bg-color;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                i {
+                    color: $color-redes;
+                }
+            }
+        }
+    }
+}

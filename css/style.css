@@ -1,421 +1,292 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+
 /** {
     margin: 0;
     padding: 0;
     
 } */
 
+
 /* APLICANDO BOOTSTRAP */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 
 /* Body */
-
 body {
-    width: 100vw;
-    overflow-x: hidden;
-}
+  width: 100vw;
+  overflow-x: hidden; }
 
 /* Carousel */
-
 .carousel-inner {
-    height: 35rem;
-}
+  height: 35rem; }
 
 /* Boton whatsapp */
-
-.botonWhatsApp img{
-    width: 70px;
-    position: fixed;
-    z-index: 2;
-    bottom: 10px;
-    right: 10px;
-}
-
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  z-index: 4;
+  bottom: 10px;
+  right: 10px; }
 
 /* NavBar */
-
 .dropdown {
-    display: none;
-}
+  display: none; }
 
 .navbar {
-    background-color: rgb(54, 95, 141);
-}
+  background-color: #365f8d; }
 
 .nav-inicio {
-    display: flex;
-    align-items: flex-start !important;
-}
+  display: flex;
+  align-items: flex-start !important; }
 
 .nav-link {
-    font-family: 'Orbitron', sans-serif;
-    color: azure;
-}
+  font-family: 'Orbitron', sans-serif;
+  color: azure; }
 
 .nav-item:hover {
-    background-color: azure;
-    color: rgb(54, 95, 141);
-    
-}
+  background-color: azure;
+  color: #365f8d; }
 
 /* Section */
-
-
-
 .section {
-    background-color: azure;
-}
+  background-color: azure; }
 
 h1 {
-    font-family: 'Orbitron', sans-serif;
-    padding-top: 1em;
-}
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 1em; }
 
 .texto-index1 {
-    font-family: 'Cabin', sans-serif;
-    padding: 3em;
-}
+  font-family: 'Cabin', sans-serif;
+  padding: 3em; }
 
 .texto {
-    color: rgb(54, 95, 141);
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    justify-items: center;
-}
+  color: #365f8d;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-items: center; }
 
 .barra {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 15%;
-    margin-right: 15%;
-    border-style: inset;
-    border-width: 2px;
-}
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-style: inset;
+  border-width: 2px; }
 
 .anac {
-    text-decoration: none;
-    font-weight: 700;
-    color: rgb(54, 95, 141);
-}
+  text-decoration: none;
+  font-weight: 700;
+  color: #365f8d; }
 
 .anac:hover {
-    color:cornflowerblue;
-}
-
-
+  color: cornflowerblue; }
 
 /* Cards */
-
 .bodyOfertas {
-    background-color: #1b2945;
-    border-color: azure;
-}
+  background-color: #1b2945;
+  border-color: azure; }
 
 .tituloOfertas {
-    color: rgb(54, 95, 141);
-    font-family: 'Orbitron', sans-serif;
-}
+  color: #365f8d;
+  font-family: 'Orbitron', sans-serif; }
 
 .textoOfertas {
-    color: azure;
-    font-family: 'Cabin', sans-serif;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}    
-
+  color: azure;
+  font-family: 'Cabin', sans-serif;
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
 
 .linkVermas {
-    color: azure;
-}
+  color: azure; }
 
 .logos-index {
-    color: rgb(177, 149, 23);
-    padding: 20px;
-} 
+  color: #b19517;
+  padding: 20px; }
 
 /* Servicios */
-
 .cartaServicios {
-    margin: 0.5rem;
-    margin-right: 1.5rem;
-}
+  margin: 0.5rem;
+  margin-right: 1.5rem; }
 
 .imagenServicios {
-    height: 35rem;
-}
-
+  height: 35rem; }
 
 .tituloServicios {
+  display: flex;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  color: whitesmoke;
+  border-style: solid;
+  border-radius: 15px;
+  margin-left: 22rem;
+  margin-right: 22rem;
+  border-color: whitesmoke;
+  background-color: #365f8d; }
+
+/* Formulario */
+.tituloBanner, .textoBanner {
+  display: flex;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif; }
+
+.textoBanner {
+  font-family: 'Cabin', sans-serif; }
+
+.barraFormulario {
+  display: block;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-style: inset;
+  border-width: 2px; }
+
+.imagenFormulario {
+  height: 400px; }
+
+.imagenLogos {
+  width: 30%;
+  height: 30%; }
+
+.cartaLogos {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-style: none; }
+
+.contendorLogos {
+  width: 100%; }
+
+.formulario {
+  padding: 5rem; }
+
+.contenedorFormulario {
+  border: 3px;
+  background: linear-gradient(#365f8d, #4e4e4e);
+  border-color: #365f8d;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 0px 10px 10px -6px black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400; }
+
+.tituloFormulario {
+  color: azure;
+  font-size: 24px;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+  text-align: center; }
+
+.itemformulario1 {
+  color: azure; }
+
+.textoItem {
+  color: azure; }
+
+.botonesFormulario {
+  padding-top: 3rem;
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
+  justify-content: center; }
+
+#Nombre, #Apellido, #Teléfono, #Mail, #inputState {
+  background-color: #1b2945;
+  margin-bottom: 1rem; }
+
+#inputState {
+  color: azure; }
+
+.btn {
+  border-color: azure;
+  background-color: #1b2945;
+  color: azure; }
+
+/* footer */
+.footerBS {
+  background-color: #365f8d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.footerBSTittle {
+  display: flex;
+  justify-content: center; }
+
+.fab {
+  color: azure; }
+
+/* Keyframes */
+@keyframes bounceInRight {}/* Mediaqueries */
+@media screen and (max-width: 576px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden; }
+  /* Navbar */
+  .lista-nav {
+    display: none; }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; }
+  .dropdown {
+    display: flex;
+    margin-right: 6rem; }
+  .menuMobile {
+    background-color: azure;
+    color: #365f8d;
+    font-family: 'Orbitron', sans-serif; }
+  .dropdown-menu {
+    background-color: cadetblue; }
+  .dropdown-item {
+    font-family: 'Orbitron', sans-serif; }
+  .itemMobile {
+    text-decoration: none;
+    color: azure; }
+  /* Logo wsp */
+  .botonWhatsApp img {
+    display: none; }
+  /* Seccion inicio */
+  .card-group {
+    display: block; }
+  /* Carousel inicio */
+  .carousel {
+    height: 20rem; }
+  .carousel-item {
+    height: 20rem; }
+  /* Pagina Contacto */
+  .cartaMobile {
+    height: 20rem; }
+  /* Pagina Servicios */
+  .imagenServicios {
+    height: 20rem; }
+  .tituloServicios {
     display: flex;
     justify-content: center;
     font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
     border-style: solid;
     border-radius: 15px;
-    margin-left: 22rem;
-    margin-right: 22rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     border-color: whitesmoke;
-    background-color: rgb(54, 95, 141);
-}
-
-
-/* Formulario */
-
-.tituloBanner, .textoBanner {
-    display: flex;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.textoBanner {
-    font-family: 'Cabin', sans-serif;
-}
-
-.barraFormulario {
-    display: block;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-    margin-left: 15%;
-    margin-right: 15%;
-    border-style: inset;
-    border-width: 2px;
-}
-
-.imagenFormulario {
-    height: 400px;
-}
-
-.imagenLogos {
-    width: 30%;
-    height: 30%;
-}
-
-.cartaLogos {
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-style: none;
-}
-
-.contendorLogos {
-    width: 100%;
-}
-
-.formulario {
-    padding: 5rem;
-}
-
-.contenedorFormulario {
-    border: 3px;
-    background: linear-gradient(rgb(54, 95, 141), rgb(78, 78, 78));
-    border-color: rgb(54, 95, 141);
-    border-style: solid;
-    border-radius: 15px;
-    box-shadow: 0px 10px 10px -6px black;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: azure;
-    font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-}
-
-.tituloFormulario {
-    color: azure;
-    font-size: 24px;
-    margin-bottom: 3rem;
-    text-decoration: underline;
-    text-align: center;
-}
-
-.itemformulario1 {
-    color: azure;
-}
-
-.textoItem {
-    color: azure;
-}
-
-.botonesFormulario {
-    padding-top: 3rem;
-    display: flex;
-    gap: 4rem;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#Nombre, #Apellido, #Teléfono, #Mail, #inputState {
-    background-color: #1b2945;
-    margin-bottom:  1rem;
-}
-
-#inputState {
-    color: azure;
-}
-
-.btn {
-    border-color: azure;
-    background-color: #1b2945;
-    color: azure;
-}
-
-
-
-
-
-
-
-/* footer */
-
-.footerBS {
-    background-color: rgb(54, 95, 141);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.footerBSTittle {
-    display: flex;
-    justify-content: center;
-}
-
-.fab {
-    color: azure;
-} 
-
-
-
-/* Keyframes */
-
-@keyframes bounceInRight {
-}
-
-
-/* Mediaqueries */
-
-@media screen and (max-width: 576px){
-   
-    body {
-        width: 100vw;
-        overflow-x: hidden;
-    }
-   
-    /* Navbar */
-
-    .lista-nav {
-        display: none;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-    }
-
-    .dropdown {
-        display: flex;
-        margin-right: 6rem;
-    }
-
-    .menuMobile {
-        background-color: azure;
-        color: rgb(54, 95, 141);
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    .dropdown-menu {
-        background-color: cadetblue;
-    }
-
-    .dropdown-item {
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    .itemMobile {
-        text-decoration: none;
-        color: azure;
-
-    }
-
-    /* Logo wsp */
-
-    .botonWhatsApp img {
-        display: none;
-    }
-
-    /* Seccion inicio */
-
-    .card-group {
-        display: block;
-    }
-
-    /* Carousel inicio */
-
-    .carousel {
-        height: 20rem;
-    }
-
-    .carousel-item {
-        height: 20rem;
-    }
-
-
-    /* Pagina Contacto */
-
-    .cartaMobile {
-        height: 20rem;
-    }
-
-
-    /* Pagina Servicios */
-
-    .imagenServicios {
-        height: 20rem;
-    }
-
-    .tituloServicios {
-        display: flex;
-        justify-content: center;
-        font-family: 'Orbitron', sans-serif;
-        color: whitesmoke;
-        border-style: solid;
-        border-radius: 15px;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        border-color: whitesmoke;
-        background-color: rgb(54, 95, 141);
-    }
-
-    .cartaServicios {
-        margin: 0.5rem;
-        margin-right: 0.5rem;
-    }
-
-
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    background-color: #365f8d; }
+  .cartaServicios {
+    margin: 0.5rem;
+    margin-right: 0.5rem; } }
 
 /*
 * {
@@ -506,8 +377,6 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }*/
-
-
 /* Contenido */
 /*
 article {
@@ -878,9 +747,7 @@ footer {
         justify-content: center;
         align-items: center;
     }*/
-
-
-    /* footer */
+/* footer */
 /*
     footer {
         display: flex;

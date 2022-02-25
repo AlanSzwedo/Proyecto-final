@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+/* Footer con SASS */
+
 footer {
   bottom: 0;
   width: 100%; }
@@ -238,23 +241,7 @@ input::placeholder {
 input {
   color: azure !important; }
 
-/* footer */
-/*
-.footerBS {
-    background-color: rgb(54, 95, 141);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
-.footerBSTittle {
-    display: flex;
-    justify-content: center;
-}
-
-.fab {
-    color: azure;
-} */
 /* Keyframes */
 @keyframes bounceInRight {}/* Mediaqueries */
 @media screen and (max-width: 576px) {

@@ -1,16 +1,13 @@
+@import "base/variables";
 @import "footer";
-@import "variables";
-
-h4 {color: red;}
-h5 {color: red;}
-h6 {color: red}
 
 
-/** {
+*{
     margin: 0;
     padding: 0;
-    
-} */
+}
+
+
 
 /* APLICANDO BOOTSTRAP */
 
@@ -22,6 +19,9 @@ h6 {color: red}
 body {
     width: 100vw;
     overflow-x: hidden;
+    min-height:100vh; 
+    margin:0; 
+    position:relative;
 }
 
 /* Carousel */
@@ -273,6 +273,13 @@ h1 {
     color: azure;
 }
 
+input::placeholder{
+    color: azure !important;
+}
+input{
+    color: azure !important;
+}
+
 
 
 
@@ -280,7 +287,7 @@ h1 {
 
 
 /* footer */
-
+/*
 .footerBS {
     background-color: rgb(54, 95, 141);
     display: flex;
@@ -295,7 +302,7 @@ h1 {
 
 .fab {
     color: azure;
-} 
+} */
 
 
 
@@ -427,487 +434,3 @@ h1 {
 
 
 
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    background: linear-gradient(to bottom, rgb(120, 130, 164), rgb(239, 239, 239) );
-}
-
-
-/* Menu */
-/*
-#menu {
-    background-color: rgb(120, 130, 164);
-    display: grid;
-    grid-template-columns: repeat(6, 1fr) repeat(1, auto);
-    grid-column: 1/7;
-    grid-template-rows: 100px;
-    
-}
-
-.logoMenu {
-    display: none;
-}
-
-
-.items {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(209, 209, 209);
-    padding: 0.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    max-height: 120px;
-    max-width: 200px;
-}
-
-/*
-
-
-.items--formulario {
-    color: rgb(209, 209, 209);
-    font-size: 20px;
-    width: 100%;
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-style: solid;
-    border-radius: 1px;
-    background-color: rgb(29, 34, 32);
-    text-align: center;
-    line-height: 30px;
-}
-
-.itemDesplegable {
-    background-color: rgb(29, 34, 32);
-    margin-top: 15px;
-    color: rgb(209, 209, 209);
-    font-size: 20px;
-    width: 100%;
-}
-
-.itemBase {
-    color: rgb(209, 209, 209);
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
-}
-
-.boton {
-    background-color: rgb(29, 34, 32);
-    color: rgb(209, 209, 209);
-    border-style: none;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}*/
-
-
-/* Contenido */
-/*
-article {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto;
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: rgb(53, 88, 154);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    grid-column: 1/7;
-    justify-self: center;
-    align-self: center;
-}
-
-.texto {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-indent: 15px;
-    color: rgb(26, 95, 122);
-    font-size: 15px;
-    font-weight: 400;
-    grid-column: 2/6;
-    justify-self: center;
-    align-self: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    
-}
-
-/* Servicios */
-/*
-.servicios {
-    display: flex;
-    row-gap: 1em;
-    padding: 1em 1em 1em 1em;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.tituloh2 {
-    color: rgb(53, 88, 154);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-    padding-top: 1em;
-    padding-left: 1em;
-    text-decoration: underline;
-}
-
-.resto {
-    
-    background-image: url(../imagenes/resto.jpg);
-    background-size: cover;
-    height: 600px;
-}
-
-.paracaidismo {
-    background-image: url(../imagenes/Paracaidismo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    
-}
-
-.escuela {
-    background-image: url(../imagenes/Aula.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-
-}
-
-.bautismo {
-    background-image: url(../imagenes/cessna150.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-}
-
-.vueloVela {
-    background-image: url(../imagenes/glider.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-}
-
-
-/* Nosotros */
-/*
-.nosotrosContenido {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "area1 area2" "area4 area3";
-}
-
-.fondo {
-    grid-area: area1;
-    height: auto;
-    width: auto;
-
-}
-
-#area2 {
-    background-color: rgb(239, 239, 239);
-    grid-area: area2;
-    display: flex;
-    justify-content: center;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.fondo1 {
-    height: 100%;
-    width: 100%;
-    grid-area: area3;
-}
-
-#area4 {
-    background-color: rgb(239, 239, 239);
-    grid-area: area4;
-    display: flex;
-    justify-content: center;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-/* Escuela de vuelo */
-/*
-.textoEscuela {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-indent: 15px;
-    color: rgb(26, 95, 122);
-    font-size: 15px;
-    font-weight: 400;
-    padding-bottom: 20px;
-}
-
-.imagenesEscuela {
-    height: 400px;
-    width: 800px;
-}
-
-.imagenesEscuela--cabina {
-    height: 500px;
-    width: 400px;
-}
-
-.escuelaDeVuelo {
-    background-color: rgb(239, 239, 239);
-    border-top: 5px solid rgb(124, 153, 172);
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 10px;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-
-.div2, .div4, .div6, .div8 {
-    padding-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-/* Formulario */
-/*
-#formulario {
-    background-color: rgba(120, 130, 164, 0.904);
-    width: 500px;
-    padding: 40px;
-    margin: auto;
-    margin-top: 75px;
-    margin-bottom: 100px;
-    border-radius: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.tituloFormulario {
-    color: rgb(209, 209, 209);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    margin-bottom: 40px;
-    text-decoration: underline;
-    text-align: center;
-}
-
-.items--formulario {
-    color: rgb(209, 209, 209);
-    font-size: 20px;
-    width: 100%;
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-style: solid;
-    border-radius: 1px;
-    background-color: rgb(29, 34, 32);
-    text-align: center;
-    line-height: 30px;
-}
-
-.itemDesplegable {
-    background-color: rgb(29, 34, 32);
-    margin-top: 15px;
-    color: rgb(209, 209, 209);
-    font-size: 20px;
-    width: 100%;
-}
-
-.itemBase {
-    color: rgb(209, 209, 209);
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
-}
-
-.boton {
-    background-color: rgb(29, 34, 32);
-    color: rgb(209, 209, 209);
-    border-style: none;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* Aside */
-/*
-.textoAside {
-    display: flex;
-    flex-direction: column;
-    border-style: outset;
-    border-radius: 10px;
-    background-color: rgb(124, 153, 172);
-}
-
-.contenedorImagenes {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-
-.imagen, .imagen1, .imagen2 {
-    height: 300px;
-    width: 395px;
-}
-
-/* Footer */
-/*
-footer {
-    background: rgb(6, 8, 8);
-    border-top: solid 2px rgb(7, 34, 39);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
-}
-
-.titulosH1--footer{
-    padding-top: 15px;
-    font-size: 30;
-    color: silver;
-    grid-column: 1/5;
-    text-align: center;
-}
-
-.links--redes, .links {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 20;
-    color: silver;
-    text-decoration: none;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 10px;
-}
-
-.redesMobile {
-    display: none;
-}
-
-/* Media querie */
-/*
-@media screen and (max-width: 380px){
-
-
-    /* Menú */
-/*
-    #menu {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto;
-    }
-
-    .items {
-        display: none;
-    }
-
-    .logoMenu {
-        display: flex;
-        justify-content: space-evenly;
-        align-self: center;
-    }
-
-    /* article */
-/*
-    article {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-
-    .contenedorImagenes {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .imagen, .imagen1, .imagen2 {
-        height: auto;
-        width: auto;
-    }
-
-    /* Escuela de vuelo */
-/*
-    .escuelaDeVuelo {
-        display: none;
-    }
-
-    /*.imagenesEscuela {
-        height: auto;
-        width: auto;
-    }
-    
-    .imagenesEscuela--cabina {
-        height: 350px;
-        width: 300px;
-    }
-    
-    .escuelaDeVuelo {
-        background-color: rgb(239, 239, 239);
-        border-top: 5px solid rgb(124, 153, 172);
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        padding-top: 20px;
-    }
-    
-    .div2, .div4, .div6, .div8 {
-        padding-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }*/
-
-
-    /* footer */
-/*
-    footer {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .links--redes {
-        display: none;
-    }
-
-    .titulosH1--footer {
-        display: none;
-    }
-
-    .redesMobile {
-        color: rgb(124, 153, 172);
-        display: flex;
-        justify-content: center;
-    }
-}*/

@@ -1,21 +1,42 @@
-@import "variables";
+@import "base/variables";
 
 footer {
-    div {
-        div {
-            display: flex;
-            justify-content: center;
-
-            div {
-                background-color: $bg-color;
+    bottom: 0;
+    width: 100%;
+        .card {
+            
+            .footerBSTittle {
+                display: flex;
+                justify-content: center;
+            }
+            .footerBS {
+                background-color: $bg-color-footer;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
 
-                i {
-                    color: $color-redes;
+                a {
+        
+                    .fab {
+                        color: $color-redes;
+
+                        &.fa-facebook:hover {
+                            color: $color-hover-facebook;
+                        }
+                        &.fa-instagram:hover {
+                            color: $color-hover-instagram;
+                        }
+                        &.fa-youtube:hover {
+                            color: $color-hover-youtube;
+                        }
+                        &.fa-whatsap:hover {
+                            color: $color-hover-whatsapp;
+                        }
+                    }
+                    
                 }
             }
         }
-    }
+    
 }
+

@@ -10,7 +10,7 @@ footer {
                 justify-content: center;
             }
             .footerBS {
-                background-color: $bg-color-footer;
+                background-color: map-get($map: $mapaColores, $key: "azulPrincipal" );
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;

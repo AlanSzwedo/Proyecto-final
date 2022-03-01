@@ -1,9 +1,103 @@
 @charset "UTF-8";
-
+/* Nosotros */
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+.imagenNosotrosDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem; }
+  .imagenNosotrosDiv .imagenNosotros {
+    height: 600px;
+    width: 90%;
+    border-radius: 10px;
+    border: 3px dashed grey; }
 
-/* Footer con SASS */
+section .NuestroObjetivo {
+  height: auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: auto auto auto;
+  margin: 1rem; }
+  section .NuestroObjetivo .h3Nosotros {
+    align-self: center;
+    font-family: "Orbitron", sans-serif;
+    color: #365f8d; }
+    section .NuestroObjetivo .h3Nosotros hr {
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: 15%;
+      margin-right: 15%;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #831400; }
+  section .NuestroObjetivo .textoNosotros {
+    font-family: "Cabin", sans-serif;
+    background-color: #1b2945;
+    color: azure;
+    padding: 1rem; }
+
+.contenidoNosotros {
+  background-color: #a0a0a0; }
+  .contenidoNosotros .cardsNosotros {
+    background: linear-gradient(45deg, #004675, #1d2529); }
+    .contenidoNosotros .cardsNosotros div div div .tituloCardsNosotros {
+      font-family: "Orbitron", sans-serif;
+      color: azure; }
+    .contenidoNosotros .cardsNosotros div div div .textoCardsNosotros {
+      font-family: "Cabin", sans-serif;
+      color: azure; }
+  .contenidoNosotros .instructores {
+    color: #365f8d;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 3rem; }
+    .contenidoNosotros .instructores h3, .contenidoNosotros .instructores h6 {
+      font-family: "Orbitron", sans-serif;
+      margin-bottom: 2rem; }
+    .contenidoNosotros .instructores .textoInstructores {
+      font-family: "Cabin", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem; }
+  .contenidoNosotros .cardInstructor1 {
+    border: 0px; }
+    .contenidoNosotros .cardInstructor1 .imagenInstructor {
+      height: 40rem; }
+    .contenidoNosotros .cardInstructor1 .cardInstructor2 {
+      background-color: #a0a0a0; }
+      .contenidoNosotros .cardInstructor1 .cardInstructor2 .instructoresH5 {
+        font-family: "Cabin", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+        color: #365f8d;
+        margin-top: 1rem;
+        padding-left: 3rem; }
+  .contenidoNosotros .cardPrincipalInstructores {
+    margin-top: 1rem; }
+    .contenidoNosotros .cardPrincipalInstructores div .contenedorInstructores {
+      background-color: #1b2945; }
+      .contenidoNosotros .cardPrincipalInstructores div .contenedorInstructores .imagenInstructores {
+        border-radius: 300px;
+        border: solid 0.3rem #365f8d; }
+      .contenidoNosotros .cardPrincipalInstructores div .contenedorInstructores div h5 {
+        font-family: "Orbitron", sans-serif;
+        color: azure; }
+  .contenidoNosotros aside .contenedorVideo {
+    color: #365f8d;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 3rem;
+    color: none;
+    padding-bottom: 2rem; }
+    .contenidoNosotros aside .contenedorVideo .videoPipistrel {
+      width: 100%;
+      height: 40rem; }
 
 footer {
   bottom: 0;
@@ -240,7 +334,6 @@ input::placeholder {
 
 input {
   color: azure !important; }
-
 
 /* Keyframes */
 @keyframes bounceInRight {}/* Mediaqueries */

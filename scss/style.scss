@@ -1,5 +1,7 @@
 @import "base/variables";
 @import "nosotros";
+@import "escuela";
+@import "servicios";
 @import "footer";
 
 
@@ -31,15 +33,9 @@ body {
     height: 35rem;
 }
 
-/* Boton whatsapp */
 
-.botonWhatsApp img{
-    width: 70px;
-    position: fixed;
-    z-index: 4;
-    bottom: 10px;
-    right: 10px;
-}
+
+
 
 
 /* NavBar */
@@ -94,8 +90,8 @@ h1 {
 
 .barra {
     display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 15%;
     margin-right: 15%;
     border-style: inset;
@@ -143,30 +139,6 @@ h1 {
     padding: 20px;
 } 
 
-/* Servicios */
-
-.cartaServicios {
-    margin: 0.5rem;
-    margin-right: 1.5rem;
-}
-
-.imagenServicios {
-    height: 35rem;
-}
-
-
-.tituloServicios {
-    display: flex;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    color: whitesmoke;
-    border-style: solid;
-    border-radius: 15px;
-    margin-left: 22rem;
-    margin-right: 22rem;
-    border-color: whitesmoke;
-    background-color: rgb(54, 95, 141);
-}
 
 
 /* Formulario */

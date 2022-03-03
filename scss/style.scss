@@ -1,21 +1,18 @@
 @import "base/variables";
+@import "navbar";
 @import "nosotros";
 @import "escuela";
 @import "servicios";
 @import "footer";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
-
-
-
-/* APLICANDO BOOTSTRAP */
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 /* Body */
 
@@ -40,7 +37,7 @@ body {
 
 /* NavBar */
 
-.dropdown {
+/*.dropdown {
     display: none;
 }
 
@@ -62,7 +59,7 @@ body {
     background-color: azure;
     color: rgb(54, 95, 141);
     
-}
+}*/
 
 /* Section */
 

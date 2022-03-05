@@ -4,6 +4,7 @@
 @import "escuela";
 @import "servicios";
 @import "footer";
+@import "mediaqueries";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
@@ -30,36 +31,6 @@ body {
     height: 35rem;
 }
 
-
-
-
-
-
-/* NavBar */
-
-/*.dropdown {
-    display: none;
-}
-
-.navbar {
-    background-color: rgb(54, 95, 141);
-}
-
-.nav-inicio {
-    display: flex;
-    align-items: flex-start !important;
-}
-
-.nav-link {
-    font-family: 'Orbitron', sans-serif;
-    color: azure;
-}
-
-.nav-item:hover {
-    background-color: azure;
-    color: rgb(54, 95, 141);
-    
-}*/
 
 /* Section */
 
@@ -256,117 +227,117 @@ input{
 
 
 /* Keyframes */
-
+/*
 @keyframes bounceInRight {
-}
+}*/
 
 
-/* Mediaqueries */
+// /* Mediaqueries */
 
-@media screen and (max-width: 576px){
+// @media screen and (max-width: 576px){
+  
+//     body {
+//         width: 100vw;
+//         overflow-x: hidden;
+//     }
    
-    body {
-        width: 100vw;
-        overflow-x: hidden;
-    }
-   
-    /* Navbar */
+//     /* Navbar */
 
-    .lista-nav {
-        display: none;
-    }
+//     .lista-nav {
+//         display: none;
+//     }
 
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-    }
+//     .navbar {
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: nowrap;
+//         justify-content: space-evenly;
+//     }
 
-    .dropdown {
-        display: flex;
-        margin-right: 6rem;
-    }
+//     .dropdown {
+//         display: flex;
+//         margin-right: 6rem;
+//     }
 
-    .menuMobile {
-        background-color: azure;
-        color: rgb(54, 95, 141);
-        font-family: 'Orbitron', sans-serif;
-    }
+//     .menuMobile {
+//         background-color: azure;
+//         color: rgb(54, 95, 141);
+//         font-family: 'Orbitron', sans-serif;
+//     }
 
-    .dropdown-menu {
-        background-color: cadetblue;
-    }
+//     .dropdown-menu {
+//         background-color: cadetblue;
+//     }
 
-    .dropdown-item {
-        font-family: 'Orbitron', sans-serif;
-    }
+//     .dropdown-item {
+//         font-family: 'Orbitron', sans-serif;
+//     }
 
-    .itemMobile {
-        text-decoration: none;
-        color: azure;
+//     .itemMobile {
+//         text-decoration: none;
+//         color: azure;
 
-    }
+//     }
 
-    /* Logo wsp */
+//     /* Logo wsp */
 
-    .botonWhatsApp img {
-        display: none;
-    }
+//     .botonWhatsApp img {
+//         display: none;
+//     }
 
-    /* Seccion inicio */
+//     /* Seccion inicio */
 
-    .card-group {
-        display: block;
-    }
+//     .card-group {
+//         display: block;
+//     }
 
-    /* Carousel inicio */
+//     /* Carousel inicio */
 
-    .carousel {
-        height: 20rem;
-    }
+//     .carousel {
+//         height: 20rem;
+//     }
 
-    .carousel-item {
-        height: 20rem;
-    }
+//     .carousel-item {
+//         height: 20rem;
+//     }
 
     
 
 
-    /* Pagina Contacto */
+//     /* Pagina Contacto */
 
-    .cartaMobile {
-        height: 20rem;
-    }
+//     .cartaMobile {
+//         height: 20rem;
+//     }
 
 
-    /* Pagina Servicios */
+//     /* Pagina Servicios */
 
-    .imagenServicios {
-        height: 20rem;
-    }
+//     .imagenServicios {
+//         height: 20rem;
+//     }
 
-    .tituloServicios {
-        display: flex;
-        justify-content: center;
-        font-family: 'Orbitron', sans-serif;
-        color: whitesmoke;
-        border-style: solid;
-        border-radius: 15px;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        border-color: whitesmoke;
-        background-color: rgb(54, 95, 141);
-    }
+//     .tituloServicios {
+//         display: flex;
+//         justify-content: center;
+//         font-family: 'Orbitron', sans-serif;
+//         color: whitesmoke;
+//         border-style: solid;
+//         border-radius: 15px;
+//         margin-left: 2rem;
+//         margin-right: 2rem;
+//         border-color: whitesmoke;
+//         background-color: rgb(54, 95, 141);
+//     }
 
-    .cartaServicios {
-        margin: 0.5rem;
-        margin-right: 0.5rem;
-    }
+//     .cartaServicios {
+//         margin: 0.5rem;
+//         margin-right: 0.5rem;
+//     }
 
 
     
-}
+// }
 
 
 

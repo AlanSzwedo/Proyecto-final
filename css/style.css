@@ -9,7 +9,8 @@ aside .botonWhatsApp a img {
   bottom: 10px;
   right: 10px; }
 
-nav {
+/* Keyframes */
+@keyframes bounceInRight {}nav {
   background-color: #365f8d; }
   nav div {
     font-family: "Orbitron", sans-serif; }
@@ -285,7 +286,8 @@ aside .botonWhatsApp a img {
   bottom: 10px;
   right: 10px; }
 
-footer {
+/* Keyframes */
+@keyframes bounceInRight {}footer {
   bottom: 0;
   width: 100%; }
   footer .card .footerBSTittle {
@@ -304,8 +306,90 @@ footer {
         color: #b03bc7; }
       footer .card .footerBS a .fab.fa-youtube:hover {
         color: #a72727; }
-      footer .card .footerBS a .fab.fa-whatsap:hover {
+      footer .card .footerBS a .fab.fa-whatsapp:hover {
         color: #05b305; }
+
+@media screen and (max-width: 576px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden; }
+  /* Navbar */
+  .lista-nav {
+    display: none; }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; }
+  .dropdown {
+    display: flex;
+    margin-right: 6rem; }
+  /*.menuMobile {
+        background-color: azure;
+        color: rgb(54, 95, 141);
+        font-family: 'Orbitron', sans-serif;
+    }*/
+  .dropdown-menu {
+    background-color: cadetblue; }
+  .dropdown-item {
+    font-family: "Orbitron", sans-serif; }
+  .itemMobile {
+    text-decoration: none;
+    color: azure; }
+  /* Logo wsp */
+  .botonWhatsApp img {
+    display: none; }
+  /* Seccion inicio */
+  .card-group {
+    display: block; }
+  /* Carousel inicio */
+  .carousel {
+    height: 20rem; }
+  .carousel-item {
+    height: 20rem; }
+  /* Pagina Nosotros */
+  section .NuestroObjetivo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .contenidoNosotros .cardInstructor1 .imagenInstructor {
+    height: auto; }
+  .contenidoNosotros .cardPrincipalInstructores {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto; }
+  .contenidoNosotros .cardInstructor1 .cardInstructor2 .instructoresH5 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #365f8d;
+    margin: 1rem; }
+  .contenidoNosotros aside .contenedorVideo {
+    color: none;
+    padding-bottom: 2rem; }
+    .contenidoNosotros aside .contenedorVideo .videoPipistrel {
+      width: 100%;
+      height: 25rem; }
+  /* Pagina Contacto */
+  .cartaMobile {
+    height: 20rem; }
+  /* Pagina Servicios */
+  .imagenServicios {
+    height: 20rem; }
+  .tituloServicios {
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    color: whitesmoke;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-color: whitesmoke;
+    background-color: #365f8d; }
+  .cartaServicios {
+    margin: 0.5rem;
+    margin-right: 0.5rem; } }
 
 * {
   margin: 0;
@@ -323,30 +407,6 @@ body {
 .carousel-inner {
   height: 35rem; }
 
-/* NavBar */
-/*.dropdown {
-    display: none;
-}
-
-.navbar {
-    background-color: rgb(54, 95, 141);
-}
-
-.nav-inicio {
-    display: flex;
-    align-items: flex-start !important;
-}
-
-.nav-link {
-    font-family: 'Orbitron', sans-serif;
-    color: azure;
-}
-
-.nav-item:hover {
-    background-color: azure;
-    color: rgb(54, 95, 141);
-    
-}*/
 /* Section */
 .section {
   background-color: azure; }
@@ -498,61 +558,6 @@ input {
   color: azure !important; }
 
 /* Keyframes */
-@keyframes bounceInRight {}/* Mediaqueries */
-@media screen and (max-width: 576px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden; }
-  /* Navbar */
-  .lista-nav {
-    display: none; }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly; }
-  .dropdown {
-    display: flex;
-    margin-right: 6rem; }
-  .menuMobile {
-    background-color: azure;
-    color: #365f8d;
-    font-family: 'Orbitron', sans-serif; }
-  .dropdown-menu {
-    background-color: cadetblue; }
-  .dropdown-item {
-    font-family: 'Orbitron', sans-serif; }
-  .itemMobile {
-    text-decoration: none;
-    color: azure; }
-  /* Logo wsp */
-  .botonWhatsApp img {
-    display: none; }
-  /* Seccion inicio */
-  .card-group {
-    display: block; }
-  /* Carousel inicio */
-  .carousel {
-    height: 20rem; }
-  .carousel-item {
-    height: 20rem; }
-  /* Pagina Contacto */
-  .cartaMobile {
-    height: 20rem; }
-  /* Pagina Servicios */
-  .imagenServicios {
-    height: 20rem; }
-  .tituloServicios {
-    display: flex;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    color: whitesmoke;
-    border-style: solid;
-    border-radius: 15px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    border-color: whitesmoke;
-    background-color: #365f8d; }
-  .cartaServicios {
-    margin: 0.5rem;
-    margin-right: 0.5rem; } }
+/*
+@keyframes bounceInRight {
+}*/

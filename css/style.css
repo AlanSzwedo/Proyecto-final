@@ -110,8 +110,6 @@ article .carousel-inner {
   justify-content: center;
   margin-bottom: 3rem; }
   .imagenNosotrosDiv .imagenNosotros {
-    /*height: 600px;
-        width: 90%;*/
     border-radius: 10px;
     border: 3px dashed grey; }
 
@@ -141,7 +139,7 @@ section .NuestroObjetivo {
     padding: 1rem; }
 
 .contenidoNosotros {
-  background-color: #a0a0a0; }
+  background-color: #292929; }
   .contenidoNosotros .cardsNosotros {
     background: linear-gradient(45deg, #004675, #1d2529); }
     .contenidoNosotros .cardsNosotros div div div .tituloCardsNosotros {
@@ -151,7 +149,7 @@ section .NuestroObjetivo {
       font-family: "Cabin", sans-serif;
       color: azure; }
   .contenidoNosotros .instructores {
-    color: #365f8d;
+    color: azure;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -170,13 +168,13 @@ section .NuestroObjetivo {
     .contenidoNosotros .cardInstructor1 .imagenInstructor {
       height: 40rem; }
     .contenidoNosotros .cardInstructor1 .cardInstructor2 {
-      background-color: #a0a0a0; }
+      background-color: #292929; }
       .contenidoNosotros .cardInstructor1 .cardInstructor2 .instructoresH5 {
         font-family: "Cabin", sans-serif;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.15rem;
-        color: #365f8d;
+        color: azure;
         margin-top: 1rem;
         padding-left: 3rem; }
   .contenidoNosotros .cardPrincipalInstructores {
@@ -190,7 +188,7 @@ section .NuestroObjetivo {
         font-family: "Orbitron", sans-serif;
         color: azure; }
   .contenidoNosotros aside .contenedorVideo {
-    color: #365f8d;
+    color: azure;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -311,6 +309,14 @@ section .NuestroObjetivo {
       font-family: "Cabin", sans-serif;
       color: azure; }
 
+section .acordeon .acordeonItems {
+  background-color: #365f8d;
+  color: azure;
+  border: 1px solid azure; }
+  section .acordeon .acordeonItems:hover {
+    background-color: azure;
+    color: #365f8d; }
+
 section .cartaServicios {
   margin: 0.5rem;
   margin-right: 1.5rem; }
@@ -335,20 +341,20 @@ section div a {
 section .contenedorServicios {
   border-radius: 35px;
   margin: 0.1rem;
-  background-color: #a0a0a0; }
+  background-color: #292929; }
   section .contenedorServicios h4 {
     display: flex;
     justify-content: center;
     margin: 1rem;
     padding-top: 2rem;
     font-family: "Orbitron", sans-serif;
-    color: #365f8d; }
+    color: azure; }
   section .contenedorServicios p, section .contenedorServicios .bordesEscuela .contenidoEscuela ul, .bordesEscuela .contenidoEscuela section .contenedorServicios ul, section .contenedorServicios .bordesEscuela .contenidoEscuela ul li, .bordesEscuela .contenidoEscuela ul section .contenedorServicios li, section .contenedorServicios .caracteristicasFlota div div .flotaTexto1 ul li, .caracteristicasFlota div div .flotaTexto1 ul section .contenedorServicios li, section .contenedorServicios ul li {
     display: flex;
     justify-content: center;
     margin: 1rem;
     font-family: "Cabin", sans-serif;
-    color: #365f8d; }
+    color: azure; }
   section .contenedorServicios .contenedorServiciosImg {
     display: grid;
     gap: 0.5rem;
@@ -404,7 +410,8 @@ aside .botonWhatsApp a img {
 @media screen and (min-width: 577px) and (max-width: 768px) {
   body {
     width: 100vw;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    box-sizing: border-box; }
   /* Navbar */
   nav {
     max-height: 8rem; }
@@ -417,7 +424,7 @@ aside .botonWhatsApp a img {
     justify-content: space-evenly; }
   .dropdown {
     display: flex;
-    margin-right: 10rem; }
+    margin-right: 7rem; }
   .dropdown-menu {
     background-color: cadetblue; }
   .dropdown-item {
@@ -428,6 +435,12 @@ aside .botonWhatsApp a img {
   /* Logo wsp */
   .botonWhatsApp img {
     display: none; }
+  /* Inicio */
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 1rem; }
   /* Pagina Nosotros */
   section .NuestroObjetivo {
     display: flex;
@@ -439,6 +452,8 @@ aside .botonWhatsApp a img {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: auto auto; }
+    .contenidoNosotros .cardPrincipalInstructores .instructoresCaras {
+      width: 100%; }
   .contenidoNosotros .cardInstructor1 .cardInstructor2 .instructoresH5 {
     font-family: "Cabin", sans-serif;
     font-weight: 600;
@@ -460,20 +475,33 @@ aside .botonWhatsApp a img {
       display: flex;
       flex-direction: column;
       gap: 0.5rem; }
-  section ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; }
+    section .contenedorServicios ul {
+      margin-top: 1.5rem; }
+      section .contenedorServicios ul li {
+        display: flex;
+        justify-content: start; }
   /* Contacto */
   .formulario {
     margin-right: 4rem; }
-  /* Escuela de Vuelo */ }
+  /* Escuela de Vuelo */
+  .cursos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 0.5rem; }
+    .cursos div div .contenedorCursos {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      margin-top: 1rem;
+      min-height: 20rem; } }
 
 /* MOBILE */
 @media screen and (max-width: 576px) {
   body {
-    width: 100vw;
-    overflow-x: hidden; }
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box; }
   /* Navbar */
   .lista-nav {
     display: none; }
@@ -485,7 +513,7 @@ aside .botonWhatsApp a img {
     max-width: 576px; }
   .dropdown {
     display: flex;
-    margin-right: 9rem; }
+    margin-right: 6rem; }
   .dropdown-menu {
     background-color: cadetblue; }
   .dropdown-item {
@@ -497,17 +525,24 @@ aside .botonWhatsApp a img {
   .botonWhatsApp img {
     display: none; }
   /* Inicio */
+  article .carousel {
+    height: 10rem; }
   .texto {
     margin-top: 5rem;
-    width: 80%;
-    max-width: 576px; }
+    width: 100%; }
     .texto iframe {
-      width: 200px;
-      height: 200px; }
+      width: 300px;
+      height: 300px; }
+  .contenedorNasa {
+    width: 100%; }
+    .contenedorNasa .imagenesNasa {
+      width: 50%;
+      height: auto; }
   .card-group {
     display: block; }
-  .carousel {
-    display: none; }
+  /*.carousel {
+        display: none;
+    }*/
   .presentacion {
     display: flex;
     flex-direction: column; }
@@ -539,11 +574,13 @@ aside .botonWhatsApp a img {
   /* Pagina Contacto */
   .cartaMobile {
     height: 20rem; }
-  section .cartaMobile {
-    max-height: 300px;
-    max-width: 95vw; }
+  section div {
+    width: 100%;
+    height: auto; }
   .formulario {
-    margin-right: 2rem; }
+    padding: 0 !important; }
+    .formulario .contenidoFormulario .textoItem {
+      width: 20rem; }
   /* Pagina Servicios */
   section .cartaServicios {
     display: none; }
@@ -553,11 +590,23 @@ aside .botonWhatsApp a img {
       display: flex;
       flex-direction: column;
       gap: 0.5rem; }
-  section ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; }
-  /* Escuela de Vuelo */ }
+    section .contenedorServicios ul {
+      margin-top: 1.5rem; }
+      section .contenedorServicios ul li {
+        display: flex;
+        justify-content: start; }
+  /* Escuela de Vuelo */
+  .cursos div div .contenedorCursos {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 1rem; }
+  article .bordesEscuela {
+    margin: 0; }
+    article .bordesEscuela .contenidoEscuela .imagenContenidoEscuela {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box; } }
 
 * {
   margin: 0;
@@ -662,8 +711,3 @@ input::placeholder {
 
 input {
   color: azure !important; }
-
-/* Keyframes */
-/*
-@keyframes bounceInRight {
-}*/

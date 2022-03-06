@@ -4,8 +4,9 @@
 @media screen and (max-width: 576px){
    
     body {
-        width: 100vw;
+        width: 100%;
         overflow-x: hidden;
+        box-sizing: border-box;
     }
    
     /* Navbar */
@@ -24,7 +25,7 @@
 
     .dropdown {
         display: flex;
-        margin-right: 9rem;
+        margin-right: 6rem;
     }
 
 
@@ -52,13 +53,27 @@
 
     /* Inicio */
 
+    article {
+        .carousel {
+            height: 10rem;
+        }
+    }
+
     .texto {
         margin-top: 5rem;
-        width: 80%;
-        max-width: 576px;
+        width: 100%;
+        
         iframe {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .contenedorNasa {
+        width: 100%;
+        .imagenesNasa {
+            width: 50%;
+            height: auto;
         }
     }
 
@@ -66,9 +81,9 @@
         display: block;
     }
 
-    .carousel {
+    /*.carousel {
         display: none;
-    }
+    }*/
 
 
     .presentacion {
@@ -143,16 +158,23 @@
     }
 
     section {
-        .cartaMobile {
-            max-height: 300px;
-            max-width: 95vw;
+        div {
+            width: 100%;
+            height: auto;
+            .imagenFormulario {
+               
+            }
            
         }
     }
 
     .formulario {
-        margin-right: 2rem;
-        
+        padding: 0 !important;
+        .contenidoFormulario {
+            .textoItem {
+                width: 20rem;
+            }
+        }
     }
 
 
@@ -172,23 +194,43 @@
                 gap: 0.5rem;
 
             }
-        }
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            ul {
+                margin-top: 1.5rem;
+                li {
+                    display: flex;
+                    justify-content: start;
+                }
+            }
         }
     }
 
      /* Escuela de Vuelo */
 
-     .article {
+    
+    .cursos{
+        div {
+            div {
+                .contenedorCursos {
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        }
+    
+
+     article {
         .bordesEscuela {
+            margin: 0;
             .contenidoEscuela {
-            
+                
                 .imagenContenidoEscuela {
-                    
+                    width: 100%;
+                    height: auto;
+                    box-sizing: border-box;
                 }
             }
         }

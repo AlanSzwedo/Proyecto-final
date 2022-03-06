@@ -5,6 +5,7 @@
     body {
         width: 100vw;
         overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     /* Navbar */
@@ -26,7 +27,7 @@
 
     .dropdown {
         display: flex;
-        margin-right: 10rem;
+        margin-right: 7rem;
         
     }
 
@@ -45,19 +46,23 @@
 
     }
 
-    nav {
-        div {
-            a {
-                
-            }
-        }
-    }
-
     /* Logo wsp */
 
     .botonWhatsApp img {
         display: none;
     }
+
+    /* Inicio */
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-bottom: 1rem;
+
+    }
+
+
 
 
      /* Pagina Nosotros */
@@ -84,6 +89,9 @@
             margin-top: 1rem;
             display: grid;
             grid-template-columns: auto auto;
+            .instructoresCaras {
+                width: 100%;
+            }
         }
 
         .cardInstructor1 {
@@ -132,13 +140,16 @@
                 gap: 0.5rem;
 
             }
+            ul {
+                margin-top: 1.5rem;
+                li {
+                    display: flex;
+                    justify-content: start;
+                }
+            }
         }
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
+        
     }
 
 
@@ -152,15 +163,21 @@
 
     /* Escuela de Vuelo */
 
-
-    .article {
-        .bordesEscuela {
-
+    .cursos{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 0.5rem;
+        div {
+            div {
+                .contenedorCursos {
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    margin-top: 1rem;
+                    min-height: 20rem;
+                }
+            }
         }
     }
-
-
-
-
-    
 }

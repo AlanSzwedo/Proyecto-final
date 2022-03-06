@@ -14,6 +14,7 @@ $mapaColores: (
     "gris": rgb(160, 160, 160),
     "amarilloLogos": #b19517,
     "whiteServicios": whitesmoke,
+    "negroFondo": rgb(41, 41, 41),
 );
 
 $barra2: rgb(131, 20, 0);
@@ -41,6 +42,18 @@ aside {
         }
     }
 }
+
+/* Barra */
+.barra {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-style: inset;
+    border-width: 2px;
+}
+
 
 /* Keyframes */
 

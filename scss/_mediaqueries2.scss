@@ -1,14 +1,17 @@
+/* TABLET */
 
-/* MOBILE */
+@media screen and (min-width: 577px) and (max-width:768px) {
 
-@media screen and (max-width: 576px){
-   
     body {
         width: 100vw;
         overflow-x: hidden;
     }
-   
+
     /* Navbar */
+
+    nav {
+        max-height: 8rem;
+    }
 
     .lista-nav {
         display: none;
@@ -19,15 +22,13 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        max-width: 576px;
     }
 
     .dropdown {
         display: flex;
-        margin-right: 9rem;
+        margin-right: 10rem;
+        
     }
-
-
 
     .dropdown-menu {
         background-color: cadetblue;
@@ -44,45 +45,24 @@
 
     }
 
+    nav {
+        div {
+            a {
+                
+            }
+        }
+    }
+
     /* Logo wsp */
 
     .botonWhatsApp img {
         display: none;
     }
 
-    /* Inicio */
 
-    .texto {
-        margin-top: 5rem;
-        width: 80%;
-        max-width: 576px;
-        iframe {
-            width: 200px;
-            height: 200px;
-        }
-    }
+     /* Pagina Nosotros */
 
-    .card-group {
-        display: block;
-    }
-
-    .carousel {
-        display: none;
-    }
-
-
-    .presentacion {
-        display: flex;
-        flex-direction: column;
-        .imagenesinicio {
-            display: none;
-        }
-
-    }
-    
-    /* Pagina Nosotros */
-
-    section {
+     section {
         .NuestroObjetivo {
             display: flex;
             flex-direction: column;
@@ -136,26 +116,6 @@
 
     }
 
-    /* Pagina Contacto */
-
-    .cartaMobile {
-        height: 20rem;
-    }
-
-    section {
-        .cartaMobile {
-            max-height: 300px;
-            max-width: 95vw;
-           
-        }
-    }
-
-    .formulario {
-        margin-right: 2rem;
-        
-    }
-
-
     /* Pagina Servicios */
 
     section {
@@ -165,7 +125,7 @@
 
 
         .contenedorServicios {
-            width: 95vw;
+            width: 97vw;
             .contenedorServiciosImg {
                 display: flex;
                 flex-direction: column;
@@ -181,22 +141,26 @@
         }
     }
 
-     /* Escuela de Vuelo */
 
-     .article {
+    /* Contacto */
+
+    .formulario {
+        margin-right: 4rem;
+        
+    }
+
+
+    /* Escuela de Vuelo */
+
+
+    .article {
         .bordesEscuela {
-            .contenidoEscuela {
-            
-                .imagenContenidoEscuela {
-                    
-                }
-            }
+
         }
     }
 
 
-    
+
+
     
 }
-
-

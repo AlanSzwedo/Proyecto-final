@@ -408,8 +408,8 @@ aside .botonWhatsApp a img {
 
 /* TABLET */
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  body {
-    width: 100vw;
+  .contenedorMaster {
+    width: 100%;
     overflow-x: hidden;
     box-sizing: border-box; }
   /* Navbar */
@@ -481,8 +481,6 @@ aside .botonWhatsApp a img {
         display: flex;
         justify-content: start; }
   /* Contacto */
-  .formulario {
-    margin-right: 4rem; }
   /* Escuela de Vuelo */
   .cursos {
     display: grid;
@@ -498,7 +496,7 @@ aside .botonWhatsApp a img {
 
 /* MOBILE */
 @media screen and (max-width: 576px) {
-  body {
+  .contenedorMaster {
     width: 100%;
     overflow-x: hidden;
     box-sizing: border-box; }
@@ -552,7 +550,8 @@ aside .botonWhatsApp a img {
   section .NuestroObjetivo {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    margin: 0; }
   .contenidoNosotros .cardInstructor1 .imagenInstructor {
     height: auto; }
   .contenidoNosotros .cardPrincipalInstructores {
@@ -573,7 +572,7 @@ aside .botonWhatsApp a img {
       height: 25rem; }
   /* Pagina Contacto */
   .cartaMobile {
-    height: 20rem; }
+    height: 15rem; }
   section div {
     width: 100%;
     height: auto; }
@@ -597,7 +596,7 @@ aside .botonWhatsApp a img {
         justify-content: start; }
   /* Escuela de Vuelo */
   .cursos div div .contenedorCursos {
-    width: 100%;
+    width: 107%;
     height: auto;
     margin: 0;
     margin-top: 1rem; }

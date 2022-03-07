@@ -89,7 +89,7 @@ article {
                 
             }
             a {
-                color: azure;
+                color: map-get($map: $mapaColores, $key: "elBlanco");
             }
         }
     }
